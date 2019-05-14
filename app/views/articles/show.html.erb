@@ -1,0 +1,10 @@
+<h4><%= @article.title %></h4>
+<p><%= @article.content %></p>
+<p><%= link_to "Edit this article ✏️", edit_article_path(@article) %></p>
+<p>
+<%= link_to "Delete this article 🗑",
+  article_path(@article),
+  method: :delete,
+  data: { confirm: "Are you sure?" }%>
+</p>
+

@@ -10,6 +10,9 @@
   </head>
 
   <body>
+    <h1>Welcome to fake wiki 📚</h1>
+    <p><%= link_to "Write new article", new_article_path %></p>
     <%= yield %>
+    <footer><%= link_to "Home", root_path %></footer>
   </body>
 </html>
